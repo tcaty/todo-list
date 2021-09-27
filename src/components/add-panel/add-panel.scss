@@ -1,0 +1,26 @@
+%general-style {
+  font-size: 20px;
+  border: 1px solid #b4b4b4;
+  border-radius: 2px;
+}
+
+.add-panel {
+  margin-bottom: 50px;
+  text-align: center;
+
+  input {
+    width: 500px;
+    margin-right: 10px;
+    padding: 5px 10px;
+
+    @extend %general-style; 
+  }
+
+  button {
+    padding: 5px;
+    color: black;
+    background-color: white;
+
+    @extend %general-style;
+  }
+}

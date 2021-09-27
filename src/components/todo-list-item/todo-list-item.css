@@ -1,0 +1,62 @@
+.todo-list-item, .todo-list-item__left-side, .todo-list-item__right-side, .todo-list-item button {
+  display: flex;
+  align-items: center;
+}
+
+.todo-list-item {
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 15px 3px;
+  border-bottom: 1px solid #b4b4b4;
+}
+
+.todo-list-item:hover .todo-list-item__right-side {
+  visibility: visible;
+}
+
+.todo-list-item__right-side {
+  visibility: hidden;
+}
+
+.todo-list-item__done-mark {
+  position: relative;
+  margin-right: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.todo-list-item__done-mark div {
+  position: absolute;
+  bottom: -4px;
+  right: 0px;
+  font-size: 20px;
+}
+
+.todo-list-item__label {
+  font-size: 22px;
+}
+
+.todo-list-item__label_done {
+  text-decoration: line-through;
+  font-size: 22px;
+}
+
+.todo-list-item button {
+  font-size: 30px;
+}
+
+.todo-list-item__important-btn {
+  margin-left: 20px;
+  color: #ffcc00;
+}
+
+.todo-list-item__important-btn_important {
+  visibility: visible;
+  margin-left: 20px;
+  color: #ffcc00;
+}
+
+.todo-list-item__delete-btn {
+  color: red;
+}
