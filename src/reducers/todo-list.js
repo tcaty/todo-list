@@ -4,38 +4,22 @@ import {
   TODO_ITEM_FIELD_TOGGLED
 } from '../actions/action-types';
 
+const createTodoItem = (id, label) => (
+  { 
+    id,
+    label,
+    important: false,
+    done: false
+  }
+);
+
 const initialState = {
   todos: [
-    {
-      id: 1,
-      label: 'Do a homework',
-      important: false,
-      done: false
-    },
-    {
-      id: 2,
-      label: 'Train typing',
-      important: false,
-      done: false
-    },
-    {
-      id: 3,
-      label: 'Go for a walk with John',
-      important: false,
-      done: false
-    },
-    {
-      id: 4,
-      label: 'Wash the dishes',
-      important: false,
-      done: false
-    },
-    {
-      id: 5,
-      label: 'Drink tea',
-      important: false,
-      done: false
-    }
+    createTodoItem(1, 'Do a homework'),
+    createTodoItem(2, 'Train typing'),
+    createTodoItem(3, 'Go for a walk with John'),
+    createTodoItem(4, 'Wash the dishes'),
+    createTodoItem(5, 'Drink tea')
   ],
   nextId: 6
 };
